@@ -1,0 +1,26 @@
+To run this sample
+
+1. Install ollama
+Download and install from here https://ollama.com/download
+
+2. Test ollama install and download the model used in the sample
+Open a commandline
+Enter 'ollama run llama3.1'
+This will automatically download the model (about 4GB)
+
+3. Enable GPU utlization (optional)
+My Momentus laptop has an NVIDIA RTX A500, it performs about the same on CPU and GPU, but might be faster on your machine.
+
+The steps to enable NVIDA GPU utilization are:
+Locate the ollama executable that runs the model, check Task Manager while interacting with the ollama commandline to find it
+for me it was C:\Users\Vin.Bush\AppData\Local\Programs\Ollama\lib\ollama\runners\cuda_v12\ollama_llama_server.exe,
+
+Open the NVIDIA control panel
+Click manage gpu utlization
+Select use for graphics and compute needs
+Click manage 3D settings
+Under select a program click add
+Click browse and enter the path of the ollama executable we found above
+Select the 'High-performance NVIDIA processor' option for preferred graphics processor
+
+4. Run the project
