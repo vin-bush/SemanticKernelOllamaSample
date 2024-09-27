@@ -8,15 +8,15 @@ Open a commandline
 Enter 'ollama run llama3.1'
 This will automatically download the model (about 4GB)
 
-If you're on a lower power machine enter 'ollama run llama3.2:1b'
-This is a new smaller model design to run anywhere
+If you're on a lower power machine (ie Momentus provided laptop) enter 'ollama run llama3.2:1b'
+This is a new smaller model designed to run anywhere
 If you do this, also update appsettings.Development.json
 
 3. Enable GPU utilization (optional)
 My Momentus laptop has an NVIDIA RTX A500, it performs about the same on CPU and GPU, but might be faster on your machine.
 My PC has an NVIDIA RTX 3070 and performs seamlessly on the GPU
 
-GPU utilization might be automatic but if not the steps are:
+GPU utilization might be automatic, they were on my PC but not laptop, if not the steps are:
 Locate the ollama executable that runs the model, check Task Manager while interacting with the ollama commandline to find it
 for me it was C:\Users\Vin.Bush\AppData\Local\Programs\Ollama\lib\ollama\runners\cuda_v12\ollama_llama_server.exe,
 
