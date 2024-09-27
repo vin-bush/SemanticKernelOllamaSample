@@ -23,4 +23,4 @@ Under select a program click add
 Click browse and enter the path of the ollama executable we found above
 Select the 'High-performance NVIDIA processor' option for preferred graphics processor
 
-4. Run the project
+4. Run the project using visual studio or dotnet commandline
